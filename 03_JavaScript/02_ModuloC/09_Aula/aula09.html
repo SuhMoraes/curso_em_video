@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <style>
+        body{
+            background: rgba(132, 96, 230, 0.863);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usa o <strong>DOM</strong> no javascript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // Selecionando a Marca
+        let p1 = window.document.getElementsByTagName('p')[0]
+       p1.style.color = 'blue'
+       let d = window.document.getElementById('msg')
+       d.innerText = 'Estou terminando...'
+    </script>
+</body>
+</html>
